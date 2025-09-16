@@ -15,7 +15,7 @@ namespace Rumpar.Web3Tools2._1
             Console.WriteLine(mn);
             Console.WriteLine();
 
-            // 2) 得到 ExtKey（两种可选方式）
+            // 2) 得到 ExtKey（2种可选方式）
             // 方式 A（推荐）: 直接从 Mnemonic 得到 ExtKey
             ExtKey masterKey = mn.DeriveExtKey();
 
