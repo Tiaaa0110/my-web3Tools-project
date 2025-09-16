@@ -23,13 +23,13 @@ namespace Rumpar.Web3Tools2._1
             // byte[] seed = mn.DeriveSeed();
             // ExtKey masterKey = new ExtKey(seed);
 
-            // 3) 派生（示例使用 BIP84: m/84'/coinType'/0'）
+            // 3) 派生（案例使用 BIP84: m/84'/coinType'/0'）
             uint coinType = network == Network.Main ? 0u : 1u;
             KeyPath account0 = new KeyPath($"84'/{coinType}'/0'");
             ExtKey accountKey = masterKey.Derive(account0);
 
             // 外部链 change=0，索引 0
-            ExtKey extKey0 = accountKey.Derive(new KeyPath("0/0"));
+            ExtKey extKey0 = accountKey.Derive(new    KeyPath("0/0"));
 
             // 私钥、公钥
             Key privateKey = extKey0.PrivateKey;
