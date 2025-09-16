@@ -6,7 +6,7 @@ namespace Rumpar.Web3Tools2._1
     {
         static void Main(string[] args)
         {
-            // network: 改为 Network.Main 在主网生成真实地址（小心私钥安全）
+            // network:     改为 Network.Main 在主网生成真实的地址（小心私钥安全）
             Network network = Network.TestNet;
 
             // 1) 生成助记词（BIP39）
